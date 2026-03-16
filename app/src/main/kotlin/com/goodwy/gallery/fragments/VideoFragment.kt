@@ -254,7 +254,7 @@ class VideoFragment : ViewPagerFragment(), TextureView.SurfaceTextureListener,
                 panoramaOutline.beVisible()
                 videoPlayOutline.beGone()
                 mVolumeSideScroll.beGone()
-                mBrightnessSideScroll.beGone()
+                        videoPreview.setRenderEffect(android.graphics.RenderEffect.createBlurEffect(20f, 20f, android.graphics.Shader.TileMode.CLAMP))
                 Glide.with(context).load(mMedium.path).into(videoPreview)
             }
         }
