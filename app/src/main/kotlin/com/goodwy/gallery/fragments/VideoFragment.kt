@@ -2,6 +2,8 @@ package com.goodwy.gallery.fragments
 
 import android.graphics.RenderEffect
 import android.graphics.Shader
+import android.graphics.RenderEffect
+import android.graphics.Shader
 import android.annotation.SuppressLint
 import android.content.res.Configuration
 import android.graphics.Color
