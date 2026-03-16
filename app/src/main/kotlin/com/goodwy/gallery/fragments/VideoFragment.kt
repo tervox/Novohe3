@@ -1,8 +1,6 @@
 package com.goodwy.gallery.fragments
 
-import android.graphics.android.graphics.RenderEffect
 import android.graphics.Shader
-import android.graphics.android.graphics.RenderEffect
 import android.graphics.Shader
 import android.annotation.SuppressLint
 import android.content.res.Configuration
@@ -254,7 +252,6 @@ class VideoFragment : ViewPagerFragment(), TextureView.SurfaceTextureListener,
                 panoramaOutline.beVisible()
                 videoPlayOutline.beGone()
                 mVolumeSideScroll.beGone()
-                        videoPreview.setRenderEffect(android.graphics.RenderEffect.createBlurEffect(20f, 20f, android.graphics.Shader.TileMode.CLAMP))
                 Glide.with(context).load(mMedium.path).into(videoPreview)
             }
         }
